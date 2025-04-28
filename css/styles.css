@@ -1,8 +1,13 @@
+
+
 /** HEADER **/
 #header-nav {
   background-color: #f6b319; /* Establece un color de fondo amarillo para el header */
   border-radius: 0; /* hace que el header no tenga bordes redondeados */
   border: 0; /* Sin borde en el header */
+}
+body {
+  background-color: #61122f; /* Color vino oscuro */
 }
 
 #logo-img {
@@ -156,11 +161,21 @@
   padding-bottom: 30px;
   background-color: #222;
   border-top: 0;
+  color: white;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-
+.panel-footer section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.panel-footer section:nth-child(3) {
+  margin-bottom: 0; /* Ya hay margen en la fila */
+}
+.panel-footer section hr {
+  width: 50%;
+}
 #hours,
 #address {
   line-height: 2;
@@ -180,6 +195,7 @@
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+
 /* END FOOTER */
 
 /********** Large devices only **********/
