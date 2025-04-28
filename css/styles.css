@@ -94,71 +94,101 @@
 
 /*tercer avance*/
 
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  }
+  /* END HOME PAGE */
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url("../images/jumbotron_1200.jpg") no-repeat;
+    height: 675px;
+  }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url("../images/restaurant-logo_medium.png") no-repeat;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
+    background: url("../images/restaurant-logo_medium.png") no-repeat; /* Cambia el logo por una versión más pequeña */
+    width: 100px; /* Reduce el ancho del logo a 100px */
+    height: 100px; /* Reduce la altura del logo a 100px */
+    margin: 5px 5px 5px 0; /* Márgenes más pequeños para acomodar mejor el logo en pantallas medianas */
   }
   /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url("../images/jumbotron_992.jpg") no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url("../images/jumbotron_768.jpg") no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
 }
-
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
   .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
+    padding-top: 10px; /* Reduce el padding superior de la marca */
+    height: 80px; /* Reduce la altura total de la marca para que ocupe menos espacio */
   }
   .navbar-brand h1 {
     /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    padding-top: 10px; /* Agrega un pequeño espacio arriba del título */
+    font-size: 5vw; /* Hace que el tamaño del título sea proporcional al ancho de la pantalla */
   }
   .navbar-brand p {
     /* Kosher cert */
-    font-size: 0.6em;
-    margin-top: 12px;
+    font-size: 0.6em; /* Hace el texto del párrafo más pequeño */
+    margin-top: 12px; /* Ajusta el margen superior para el párrafo */
   }
   .navbar-brand p img {
     /* Star-K */
-    height: 20px;
+    height: 20px; /* Hace el logo de la certificación más pequeño para pantallas pequeñas */
   }
   #collapsable-nav a {
     /* Collapsed nav menu text */
-    font-size: 1.2em;
+    font-size: 1.2em; /* Aumentael tamaño del texto del menú colapsado */
   }
   #collapsable-nav a span {
     /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
+    font-size: 1em; /* Establece tamaño normal para los íconos */
+    margin-right: 5px; /* Agrega separación entre el ícono y el texto */
   }
   #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
+    font-size: 1.5em; /* Agranda el botón de llamada para hacerlo más visible */
+    display: block; /* Hace que ocupe todo el ancho disponible */
+    margin: 0 20px; /* Agrega márgenes laterales */
+    padding: 10px; /* Agrega espacio interno para el botón */
+    border: 2px solid #fff; /* Pone un borde blanco alrededor del botón */
+    background-color: #f6b319; /* Establece un fondo amarillo para el botón */
+    color: #951c49; /* Color de texto vino */
   }
   #xs-deliver {
-    margin-top: 5px;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    margin-top: 5px; /* Espacio superior para el texto de delivery */
+    font-size: 0.7em; /* Tamaño pequeño de letra */
+    letter-spacing: 0.1em; /* Espaciado entre letras para mejor lectura */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
   }
   /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  /* End Home Page */
 }
