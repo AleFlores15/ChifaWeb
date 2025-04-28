@@ -316,18 +316,19 @@ body {
 }
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-  /* Header */
-  .navbar-brand h1 {
-    /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
+
+@media (max-width: 479px) { 
+   /* Header */
+  .navbar-brand h1 { 
+    padding-top: 5px; /* Reduce el espacio arriba del título para que no ocupe mucho lugar */
+    font-size: 6vw; /* El tamaño del texto será 6% del ancho de la ventana, haciéndolo responsive y proporcional */
   }
   /* End Header */
+
   /* Home page */
   #menu-tile,
-  #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
+  #specials-tile { 
+    width: 280px; /* Fija el ancho de los mosaicos en 280px para pantallas muy pequeñas */
+    margin: 0 auto 15px; /* Centra los mosaicos horizontalmente y agrega 15px de espacio abajo */
   }
 }
