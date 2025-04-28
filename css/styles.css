@@ -1,47 +1,164 @@
 /** HEADER **/
 #header-nav {
-    background-color: #f6b319; /* Establece un color de fondo amarillo para el header */
-    border-radius: 0;           /* hace que el header no tenga bordes redondeados */
-    border: 0;                  /* Sin borde en el header */
-  }
-  
+  background-color: #f6b319; /* Establece un color de fondo amarillo para el header */
+  border-radius: 0; /* hace que el header no tenga bordes redondeados */
+  border: 0; /* Sin borde en el header */
+}
+
+#logo-img {
+  background: url("../images/restaurant-logo_large.png"); /* Imagen de fondo del logo, no se repite */
+  width: 150px; /* Ancho fijo del logo de 150px */
+  height: 150px; /* Altura fija del logo de 150px */
+  margin: 10px 15px 10px 0; /* Márgenes: arriba 10px, derecha 15px, abajo 10px, izquierda 0 */
+}
+
+.navbar-brand {
+  padding-top: 25px; /* Espacio de 25px arriba del contenido */
+}
+
+.navbar-brand h1 {
+  /* Restaurant name */
+  font-family: "Lora", serif; /* Fuente "Lora" con estilo serif */
+  color: #557c3e; /* Color del texto verde oscuro */
+  font-size: 1.5em; /* Tamaño del texto 1.5 veces el normal */
+  text-transform: uppercase; /*  texto en mayúsculas */
+  font-weight: bold; /* Texto en negrita */
+  text-shadow: 1px 1px 1px #222; /* Sombra al texto (1px a la derecha, 1px abajo, color oscuro) */
+  margin-top: 0; /* Sin margen superior */
+  margin-bottom: 0; /* Sin margen inferior */
+  line-height: 0.75; /* Altura de línea reducida al 75% */
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none; /* Elimina el subrayado de los enlaces al pasar el mouse o enfocar */
+}
+
+.navbar-brand p {
+  /* Kosher cert */
+  color: #000; /* Color del texto negro */
+  text-transform: uppercase; /* Convierte todo el texto en mayúsculas */
+  font-size: 0.7em; /* Tamaño de fuente más pequeño (70% del tamaño base) */
+  margin-top: 15px; /* Agrega espacio de 15px arriba del párrafo */
+}
+
+.navbar-brand p span {
+  /* Star-K */
+  vertical-align: middle; /* Alinea verticalmente el contenido del <span> al centro respecto al texto */
+}
+
+/*AVANCE PARTE 2*/
+#nav-list {
+  margin-top: 10px; /* Agrega un espacio de 10px arriba del listado de navegación */
+}
+
+#nav-list a {
+  color: #951c49; /* Color del texto de los enlaces (un tono vino) */
+  text-align: center; /* Centra el texto dentro de los enlaces */
+}
+
+#nav-list a:hover {
+  background: #e7e7e7; /* Cambia el fondo a gris claro cuando el usuario pasa el mouse sobre un enlace */
+}
+
+#nav-list a span {
+  font-size: 1.8em; /* Aumenta el tamaño del ícono o texto dentro del enlace */
+}
+
+#phone {
+  margin-top: 5px; /* Agrega espacio (5px) arriba del número de teléfono */
+}
+
+#phone a {
+  /* Phone number */
+  text-align: right; /* Alinea a la derecha el enlace del teléfono */
+  padding-bottom: 0; /* Elimina el padding inferior del enlace */
+}
+
+#phone div {
+  /* We Deliver */
+  color: #557c3e; /* Color verde oliva para el texto "We Deliver" */
+  text-align: right; /* Alinea a la derecha el texto debajo del teléfono */
+  padding-right: 15px; /* Agrega 15px de espacio a la derecha del texto */
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 1px solid #61122f; /* Aplica un borde color vino oscuro al botón de hamburguesa y sus rayas */
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both; /* Limpia cualquier flotado para que el botón no se superponga con otros elementos */
+  margin-top: -30px; /* Mueve el botón hacia arriba 30px para ajustarlo mejor en la cabecera */
+}
+
+/*tercer avance*/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
   #logo-img {
-    background: url("../images/restaurant-logo_large.png") ; /* Imagen de fondo del logo, no se repite */
-    width: 150px;               /* Ancho fijo del logo de 150px */
-    height: 150px;              /* Altura fija del logo de 150px */
-    margin: 10px 15px 10px 0;   /* Márgenes: arriba 10px, derecha 15px, abajo 10px, izquierda 0 */
+    background: url("../images/restaurant-logo_medium.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
   }
-  
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
   .navbar-brand {
-    padding-top: 25px;          /* Espacio de 25px arriba del contenido */
+    padding-top: 10px;
+    height: 80px;
   }
-  
   .navbar-brand h1 {
     /* Restaurant name */
-    font-family: "Lora", serif; /* Fuente "Lora" con estilo serif */
-    color: #557c3e;             /* Color del texto verde oscuro */
-    font-size: 1.5em;           /* Tamaño del texto 1.5 veces el normal */
-    text-transform: uppercase; /*  texto en mayúsculas */
-    font-weight: bold;          /* Texto en negrita */
-    text-shadow: 1px 1px 1px #222; /* Sombra al texto (1px a la derecha, 1px abajo, color oscuro) */
-    margin-top: 0;              /* Sin margen superior */
-    margin-bottom: 0;           /* Sin margen inferior */
-    line-height: 0.75;          /* Altura de línea reducida al 75% */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-  
-  .navbar-brand a:hover,
-  .navbar-brand a:focus {
-    text-decoration: none;      /* Elimina el subrayado de los enlaces al pasar el mouse o enfocar */
+  .navbar-brand p {
+    /* Kosher cert */
+    font-size: 0.6em;
+    margin-top: 12px;
   }
-
-  .navbar-brand p { /* Kosher cert */
-    color: #000;                /* Color del texto negro */
-    text-transform: uppercase;  /* Convierte todo el texto en mayúsculas */
-    font-size: .7em;             /* Tamaño de fuente más pequeño (70% del tamaño base) */
-    margin-top: 15px;            /* Agrega espacio de 15px arriba del párrafo */
+  .navbar-brand p img {
+    /* Star-K */
+    height: 20px;
   }
-  
-  .navbar-brand p span { /* Star-K */
-    vertical-align: middle;      /* Alinea verticalmente el contenido del <span> al centro respecto al texto */
+  #collapsable-nav a {
+    /* Collapsed nav menu text */
+    font-size: 1.2em;
   }
-  
+  #collapsable-nav a span {
+    /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+}
